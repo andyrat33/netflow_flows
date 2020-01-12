@@ -29,7 +29,7 @@ def update_add_record(source, destination, tag, quantity):
     else:
         data[(str(source), str(destination), tag)] = [str(source), str(destination), tag, quantity]
 
-with open('/Users/andrewratcliffe/OneDrive - Nswc Systems Ltd/SANS/SEC530/sankey_data.csv', newline='',
+with open('sankey_data.csv', newline='',
           encoding='utf-8-sig') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in csvreader:
